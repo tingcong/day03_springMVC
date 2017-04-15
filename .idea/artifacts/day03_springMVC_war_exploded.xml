@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="day03_springMVC:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/day03_springMVC_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="day03_springMVC/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="day03_springMVC" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="spring-web" />
+          <element id="library" level="project" name="spring-ioc" />
+          <element id="library" level="project" name="spring-mvc" />
+          <element id="library" level="project" name="jstl" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/spring_mvc/org.springframework.web.servlet-3.0.5.RELEASE.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
