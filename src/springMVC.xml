@@ -14,7 +14,41 @@
 
       ">
 
-    <import resource="cn/icast/day05/springMVC_05.xml"/>
-    <import resource="cn/icast/day07/springMVC_07.xml"/>
-    <import resource="cn/icast/day08/springMVC_08.xml"/>
+    <!--<import resource="cn/icast/day05/springMVC_05.xml"/>-->
+    <!--<import resource="cn/icast/day07/springMVC_07.xml"/>-->
+    <!--<import resource="cn/icast/day08/springMVC_08.xml"/>-->
+    <!--<import resource="cn/icast/day09/springMVC_09.xml"/>-->
+    <!--<import resource="cn/icast/day10/springMVC_10.xml"/>-->
+    <!--<import resource="cn/icast/day14/springMVC_14.xml"/>-->
+    <!--<import resource="cn/icast/day18/springMVC_18.xml"/>-->
+    <!--<import resource="cn/icast/day19/springMVC_19.xml"/>-->
+    <!--<import resource="cn/icast/day20/springMVC_20.xml"/>-->
+    <!--<import resource="cn/icast/day22/springMVC_22.xml"/>-->
+    <!--<import resource="cn/icast/day23/springMVC_23.xml"/>-->
+    <!--<import resource="cn/icast/day24/springMVC_24.xml"/>-->
+    <!--<import resource="cn/icast/day25/springMVC_25.xml"/>-->
+    <import resource="cn/icast/example/config/spring-emp.xml"/>
+
+
+    <!--映射器
+        BeanNameUrlHandlerMapping表示将Bean标签的Name属性当做URL请求
+        （可选）
+    -->
+    <!--<bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"></bean>-->
+
+    <!--适配器
+        SimpleControllerHandlerAdapter表示用于寻找实现了Controller接口的Action类
+        （可选）
+    -->
+    <!--<bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"></bean>-->
+
+    <!--
+        视图解析器
+        InternalResourceViewResolver表示通过对象ModelAndView对象中封装的视图名找到真正的页面
+        （可选）
+    -->
+    <!--<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"></bean>-->
+
+
+
 </beans>

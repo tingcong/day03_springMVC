@@ -14,7 +14,29 @@
 <body>
 Success !</br>
 ${requestScope.message}<br>
+<hr>
+姓名：${requestScope.emp.username}<br/>
+性别：${requestScope.emp.gender}<br/>
 
+入职时间：${requestScope.emp.hiredate}<br/>
+入职时间：<fmt:formatDate
+        value="${requestScope.emp.hiredate}"
+        type="date"
+        dateStyle="full"
+/>
+<hr>
+${user.id}<br>
+${user.username}<br>
+${user.salary}<br>
+<fmt:formatDate value="${user.hiredate}" type="date" dateStyle="full"/><br>
+<hr>
+<a href="${pageContext.request.contextPath}/add.action" class="no_underline">增加用户</a><br/>
+
+<hr/>
+
+<a href="${pageContext.request.contextPath}/update.action" class="no_underline" >修改用户</a><br/>
+<a href="${pageContext.request.contextPath}/delete.action" class="no_underline" >删除用户</a><br/>
+<a href="${pageContext.request.contextPath}/find.action" class="no_underline" >查询用户</a><br/>
 <hr>
 <p>
     1)fmt:formatDate 来源于 http://java.sun.com/jsp/jstl/fmt   <br>

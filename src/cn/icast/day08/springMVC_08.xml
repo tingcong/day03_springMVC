@@ -14,37 +14,31 @@
 
       ">
 
-    <bean name="userActionID" class="cn.icast.day08.UserAction"/>
 
+
+    <!--将多个请求，映射到同一个Action-->
+    <!--
+        <bean name="/add.action" class="cn.icast.day08.UserAction"/>
+        <bean name="/delete.action" class="cn.icast.day08.UserAction"/>
+        <bean name="/update.action" class="cn.icast.day08.UserAction"/>
+        <bean name="/find.action" class="cn.icast.day08.UserAction"/>
+    -->
+
+
+    <bean name="userActionID" class="cn.icast.day08.UserAction"/>
     <!-- 注册映射器
-       【适合】于将多个请求，映射到同一个Action
+       【适合】用于将多个请求，映射到同一个Action
      -->
     <bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
         <property name="mappings">
             <props>
                 <!-- key表示请求路径 -->
-                <prop key="/update.action">userActionID</prop>
+                <prop key="/update.action" >userActionID</prop>
                 <prop key="/delete.action">userActionID</prop>
                 <prop key="/find.action">userActionID</prop>
+                <prop key="/add.action">userActionID</prop>
             </props>
         </property>
     </bean>
-
-<!--
-
-
-    &lt;!&ndash; 映射器 &ndash;&gt;
-    <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"></bean>
-
-
-    &lt;!&ndash; 适配器 &ndash;&gt;
-
-
-    &lt;!&ndash; 视图解析器 &ndash;&gt;
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/jsp/"/>
-        <property name="suffix" value=".jsp"/>
-    </bean>
--->
 
 </beans>

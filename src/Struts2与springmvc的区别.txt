@@ -1,0 +1,8 @@
+1）springmvc的入口是一个servlet，即前端控制器，例如：*.action
+   struts2入口是一个filter过虑器，即前端过滤器，例如：/*
+2）springmvc是基于方法开发，传递参数是通过方法形参，可以设计为单例
+   struts2是基于类开发，传递参数是通过类的属性，只能设计为多例
+3）springmvc通过参数解析器是将request对象内容进行解析成方法形参，将响应数据和页面封装成
+   ModelAndView对象，最后又将模型数据通过request对象传输到页面
+struts采用值栈存储请求和响应的数据，通过OGNL存取数据
+   .. …
